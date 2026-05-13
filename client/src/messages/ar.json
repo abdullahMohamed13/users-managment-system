@@ -1,0 +1,85 @@
+{
+  "navbar": {
+    "home": "الرئيسية",
+    "about us": "من نحن",
+    "contact": "اتصل بنا",
+    "fqa": "الأسئلة الشائعة",
+    "pricing": "الأسعار",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب"
+  },
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "مرحباً بعودتك",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "button": "تسجيل الدخول",
+      "loading": "جار تسجيل الدخول...",
+      "noAccount": "ليس لديك حساب؟",
+      "signupLink": "إنشاء حساب",
+      "error": "فشل تسجيل الدخول. تحقق من بياناتك"
+    },
+    "signup": {
+      "title": "إنشاء حساب",
+      "subtitle": "أنشئ حسابك الجديد",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "أدخل اسمك",
+      "emailLabel": "البريد الإلكتروني",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "button": "إنشاء حساب",
+      "loading": "جار إنشاء الحساب...",
+      "hasAccount": "لديك حساب بالفعل؟",
+      "loginLink": "تسجيل الدخول",
+      "error": "فشل إنشاء الحساب. حاول مرة أخرى"
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "users": "المستخدمين",
+      "addUser": "إضافة مستخدم",
+      "deleteUser": "حذف مستخدم",
+      "logout": "تسجيل الخروج"
+    },
+    "table": {
+      "id": "المعرف",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "actions": "الإجراءات",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "noUsers": "لا يوجد مستخدمون",
+      "page": "صفحة",
+      "of": "من",
+      "failedToLoad": "فشل تحميل المستخدمين"
+    },
+    "userDetails": {
+      "title": "تفاصيل المستخدم",
+      "selectUser": "اختر مستخدم لعرض التفاصيل",
+      "failedToLoad": "فشل تحميل تفاصيل المستخدم"
+    },
+    "updateForm": {
+      "title": "تحديث المستخدم",
+      "selectUser": "اختر مستخدم للتعديل",
+      "nameLabel": "الاسم",
+      "emailLabel": "البريد الإلكتروني",
+      "updateButton": "تحديث المستخدم",
+      "updating": "جار التحديث..."
+    },
+    "createForm": {
+      "title": "إنشاء مستخدم جديد",
+      "nameLabel": "الاسم",
+      "emailLabel": "البريد الإلكتروني",
+      "passwordLabel": "كلمة المرور",
+      "namePlaceholder": "أدخل الاسم",
+      "emailPlaceholder": "أدخل البريد الإلكتروني",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "createButton": "إنشاء مستخدم",
+      "creating": "جار الإنشاء..."
+    }
+  }
+}

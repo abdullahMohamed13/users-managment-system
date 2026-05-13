@@ -1,0 +1,85 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about us": "About Us",
+    "contact": "Contact",
+    "fqa": "FAQ",
+    "pricing": "Pricing",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Welcome back",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "button": "Login",
+      "loading": "Logging in...",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Sign up",
+      "error": "Login failed. Check your credentials"
+    },
+    "signup": {
+      "title": "Sign Up",
+      "subtitle": "Create your account",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "button": "Sign Up",
+      "loading": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Login",
+      "error": "Sign up failed. Please try again"
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "users": "Users",
+      "addUser": "Add User",
+      "deleteUser": "Delete User",
+      "logout": "Logout"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "noUsers": "No users found",
+      "page": "Page",
+      "of": "of",
+      "failedToLoad": "Failed to load users"
+    },
+    "userDetails": {
+      "title": "User Details",
+      "selectUser": "Select a user to view details",
+      "failedToLoad": "Failed to load user details"
+    },
+    "updateForm": {
+      "title": "Update User",
+      "selectUser": "Select a user to edit",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "updateButton": "Update User",
+      "updating": "Updating..."
+    },
+    "createForm": {
+      "title": "Create New User",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "namePlaceholder": "Enter name",
+      "emailPlaceholder": "Enter email",
+      "passwordPlaceholder": "Enter password",
+      "createButton": "Create User",
+      "creating": "Creating..."
+    }
+  }
+}
