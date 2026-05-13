@@ -33,7 +33,6 @@ export default function RootLayout({
         <AppProviders>
           <NextIntlClientProvider>
             {children}
-            <LocalSwitcher changeLocaleAction={changeLocaleAction} />
           </NextIntlClientProvider>
         </AppProviders>
       </body>

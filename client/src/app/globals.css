@@ -29,8 +29,9 @@
     display: block;
   }
 
-  input::placeholder {
- 		color: red !important; 
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-text-disabled);
   }
 }
 /* -------------------------------------------------- */

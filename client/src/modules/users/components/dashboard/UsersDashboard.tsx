@@ -1,6 +1,7 @@
 "use client";
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 import UserTable from "./UserTable";
 import UpdateForm from "./UpdateForm";
 import DeleteModal from "./DeleteModal";
@@ -13,10 +14,10 @@ export default function UsersDashboard() {
   const router = useRouter();
   const { toast } = useToast();
   const [editUserId, setEditUserId] = useState<number | null>(null);
-  const [deleteUserId, setDeleteUserId] = useState<number | null>(null);
+  const [userToDelete, setUserToDelete] = useState<getUsersResponse | null>(null);
   const currentUserId = TokenService.getUserId();
 
-  const { mutate: deleteUser } = useDeleteUser();
+  const { mutate: deleteUser, isPending: isDeleting } = useDeleteUser();
 
   const handleLogoutAndRedirect = useCallback(() => {
     TokenService.removeToken();
@@ -44,12 +45,12 @@ export default function UsersDashboard() {
     if (action === "edit") {
       setEditUserId(user.id);
     } else if (action === "delete") {
-      setDeleteUserId(user.id);
+      setUserToDelete(user);
     }
   };
 
   return (
-    <div className="p-6 space-y-6 ds-bg-alt h-full overflow-y-auto">
+    <div className="p-4 sm:p-6 space-y-6 ds-bg-alt h-full overflow-y-auto">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2">
           <UserTable
@@ -59,22 +60,52 @@ export default function UsersDashboard() {
         </div>
 
         <div className="space-y-6">
-          <UpdateForm
-            userId={editUserId}
-            onClose={() => setEditUserId(null)}
-          />
+          <AnimatePresence mode="wait">
+            {editUserId ? (
+              <motion.div
+                key="update-form"
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 40 }}
+                transition={{ duration: 0.25 }}
+              >
+                <UpdateForm
+                  userId={editUserId}
+                  onClose={() => setEditUserId(null)}
+                />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="update-placeholder"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <UpdateForm
+                  userId={null}
+                  onClose={() => {}}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
-      {deleteUserId !== null && (
-        <DeleteModal
-          onConfirm={(id) => {
-            setDeleteUserId(null);
-            handleDelete(id);
-          }}
-          onClose={() => setDeleteUserId(null)}
-        />
-      )}
+      <AnimatePresence>
+        {userToDelete !== null && (
+          <DeleteModal
+            userId={userToDelete.id}
+            userName={userToDelete.name}
+            isPending={isDeleting}
+            onConfirm={(id) => {
+              setUserToDelete(null);
+              handleDelete(id);
+            }}
+            onClose={() => setUserToDelete(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
