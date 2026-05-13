@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "email": "z@gmail.com",
+      "password": "$2a$10$JsUzrowa1kEA89wjfkb8SuZ2ueJ7Lpyoqxu8UulzO.jBW7OQHXr82",
+      "name": "Zezo",
+      "id": 2
+    },
+    {
+      "email": "y@gmail.com",
+      "password": "$2a$10$Kt4h6sT7ToH7AtIVcyNJsOrhQ.XqwBYwtIF9jIs8fb2g3OqpCGOAu",
+      "name": "Yasser",
+      "id": 3
+    },
+    {
+      "email": "haha@gmail.com",
+      "password": "$2a$10$7QR9ojn/V99GVRfgEDXAPOaqFO6IxxBfOXNiVNsilscGJ0vtP7RYC",
+      "name": "bruh",
+      "id": 4
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$ffN.ZhIVlsux8x5ZA.XQpOcaOlqcSS8BHjWIVGC38yM7a15qmXOy6",
+      "name": "ZEZOasd",
+      "id": 5
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "$2a$10$sWBTwk/pogsHXTRZDAiizuLS/glCMefYgLHgj4HbZse3YnBQufYRq",
+      "name": "bruh",
+      "id": 6
+    },
+    {
+      "email": "bro@gmail.com",
+      "password": "$2a$10$mcHIduY6/Uewstxit.Nx3OSBUZHpT7qafrgItX6/18/a2jx0gjbHO",
+      "name": "BRO",
+      "id": 9
+    },
+    {
+      "email": "b@gmail.com",
+      "password": "$2a$10$mK34odEC5IXkUeRi5gU1PO/XT80n7qKjUw0KkElrvGfBB54W8KW8O",
+      "name": "Abdallah",
+      "id": 10
+    },
+    {
+      "email": "ab@gmail.com",
+      "password": "$2a$10$ofdv.4l0x.1jwI3jjlGqWOokz8ETf1MjU7Bz4YgyTrKTu.hW7zI1q",
+      "name": "asd",
+      "id": 11
+    }
+  ]
+}
