@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useSignup } from "@/modules/users/hooks/useSignup";
+import { useSignup } from "@/modules/auth/hooks/useSignup";
 import { TokenService } from "@/services/tokenService";
 import Logo from "@/components/atoms/logo";
 import InputForm from "@/components/atoms/Input";
