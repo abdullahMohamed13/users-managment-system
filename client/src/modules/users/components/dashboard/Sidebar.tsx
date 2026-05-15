@@ -69,7 +69,7 @@ export default function Sidebar({ className }: SidebarProps) {
 
   const sidebarContent = (
     <>
-      <div className="p-6 border-b ds-border-sm flex items-center justify-between">
+      <div className="p-6 flex items-center justify-between">
         <Logo />
         <button
           onClick={() => setMobileOpen(false)}
@@ -101,7 +101,7 @@ export default function Sidebar({ className }: SidebarProps) {
         </button>
       </nav>
 
-      <div className="p-4 border-t ds-border-sm flex items-center justify-between">
+      <div className="p-4 flex items-center justify-between">
         <ThemeToggle />
         <button
           onClick={() => changeLocaleAction(nextLocale)}
@@ -130,14 +130,14 @@ export default function Sidebar({ className }: SidebarProps) {
     <>
       <button
         onClick={() => setMobileOpen(true)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2.5 ds-bg ds-rounded-md ds-shadow-md border ds-border-sm cursor-pointer"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2.5 ds-bg ds-rounded-md ds-shadow-md cursor-pointer"
       >
         <Menu size={22} className="ds-text-primary" />
       </button>
 
       <aside
         className={cn(
-          "hidden lg:flex ds-bg h-screen w-64 flex-col border-e ds-border-sm shrink-0",
+          "hidden lg:flex ds-bg h-screen w-64 flex-col shrink-0",
           className,
         )}
       >
